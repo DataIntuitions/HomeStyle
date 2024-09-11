@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeStyling", "HomeStyling\HomeStyling.csproj", "{3248FC26-E997-4C44-B577-4EDE67D303BA}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "HomeStylingSetup", "HomeStylingSetup\HomeStylingSetup.vdproj", "{110AA9B6-89FD-499E-85D8-968CE85F2F30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3248FC26-E997-4C44-B577-4EDE67D303BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3248FC26-E997-4C44-B577-4EDE67D303BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3248FC26-E997-4C44-B577-4EDE67D303BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3248FC26-E997-4C44-B577-4EDE67D303BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{110AA9B6-89FD-499E-85D8-968CE85F2F30}.Debug|Any CPU.ActiveCfg = Debug
+		{110AA9B6-89FD-499E-85D8-968CE85F2F30}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30B8E261-513E-4EAB-AECB-C863184E399B}
+	EndGlobalSection
+EndGlobal
