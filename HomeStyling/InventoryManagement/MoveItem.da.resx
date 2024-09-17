@@ -128,7 +128,7 @@
     <value>Bevæge sig</value>
   </data>
   <data name="CancelMoveItem.Text" xml:space="preserve">
-    <value>Afbestille</value>
+    <value>annullere</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Flyt element</value>

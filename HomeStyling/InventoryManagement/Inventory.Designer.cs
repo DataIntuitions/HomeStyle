@@ -57,9 +57,9 @@
             // 
             // ItemName
             // 
+            resources.ApplyResources(this.ItemName, "ItemName");
             this.ItemName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
             this.ItemName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.ItemName, "ItemName");
             this.ItemName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.ItemName.Name = "ItemName";
             // 
@@ -71,9 +71,9 @@
             // 
             // ItemNr
             // 
+            resources.ApplyResources(this.ItemNr, "ItemNr");
             this.ItemNr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
             this.ItemNr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.ItemNr, "ItemNr");
             this.ItemNr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.ItemNr.Name = "ItemNr";
             this.ItemNr.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ItemNr_KeyPress);
@@ -92,9 +92,9 @@
             // 
             // ItemCount
             // 
+            resources.ApplyResources(this.ItemCount, "ItemCount");
             this.ItemCount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
             this.ItemCount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.ItemCount, "ItemCount");
             this.ItemCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.ItemCount.Name = "ItemCount";
             this.ItemCount.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -123,9 +123,9 @@
             // 
             // ItemCountBeforeSale
             // 
+            resources.ApplyResources(this.ItemCountBeforeSale, "ItemCountBeforeSale");
             this.ItemCountBeforeSale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
             this.ItemCountBeforeSale.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.ItemCountBeforeSale, "ItemCountBeforeSale");
             this.ItemCountBeforeSale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.ItemCountBeforeSale.Name = "ItemCountBeforeSale";
             this.ItemCountBeforeSale.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ItemCountBeforeSale_KeyPress);
@@ -138,9 +138,9 @@
             // 
             // ItemPrice
             // 
+            resources.ApplyResources(this.ItemPrice, "ItemPrice");
             this.ItemPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
             this.ItemPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.ItemPrice, "ItemPrice");
             this.ItemPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.ItemPrice.Name = "ItemPrice";
             this.ItemPrice.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
@@ -153,16 +153,16 @@
             // 
             // ItemSupplier
             // 
+            resources.ApplyResources(this.ItemSupplier, "ItemSupplier");
             this.ItemSupplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
             this.ItemSupplier.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.ItemSupplier, "ItemSupplier");
             this.ItemSupplier.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.ItemSupplier.Name = "ItemSupplier";
             // 
             // CreateInventory
             // 
-            this.CreateInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             resources.ApplyResources(this.CreateInventory, "CreateInventory");
+            this.CreateInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.CreateInventory.CausesValidation = false;
             this.CreateInventory.Cursor = System.Windows.Forms.Cursors.Default;
             this.CreateInventory.FlatAppearance.BorderSize = 0;
@@ -179,8 +179,8 @@
             // 
             // DeleteInventory
             // 
-            this.DeleteInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             resources.ApplyResources(this.DeleteInventory, "DeleteInventory");
+            this.DeleteInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.DeleteInventory.CausesValidation = false;
             this.DeleteInventory.Cursor = System.Windows.Forms.Cursors.Default;
             this.DeleteInventory.FlatAppearance.BorderSize = 0;
@@ -191,8 +191,8 @@
             // 
             // SaveInventory
             // 
-            this.SaveInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             resources.ApplyResources(this.SaveInventory, "SaveInventory");
+            this.SaveInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.SaveInventory.CausesValidation = false;
             this.SaveInventory.Cursor = System.Windows.Forms.Cursors.Default;
             this.SaveInventory.FlatAppearance.BorderSize = 0;
@@ -203,8 +203,8 @@
             // 
             // FindInventory
             // 
-            this.FindInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             resources.ApplyResources(this.FindInventory, "FindInventory");
+            this.FindInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.FindInventory.CausesValidation = false;
             this.FindInventory.Cursor = System.Windows.Forms.Cursors.Default;
             this.FindInventory.FlatAppearance.BorderSize = 0;
@@ -215,8 +215,8 @@
             // 
             // InventoryAddPhoto
             // 
-            this.InventoryAddPhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             resources.ApplyResources(this.InventoryAddPhoto, "InventoryAddPhoto");
+            this.InventoryAddPhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.InventoryAddPhoto.CausesValidation = false;
             this.InventoryAddPhoto.Cursor = System.Windows.Forms.Cursors.Default;
             this.InventoryAddPhoto.FlatAppearance.BorderSize = 0;
@@ -248,8 +248,8 @@
             // 
             // ViewPhoto
             // 
-            this.ViewPhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             resources.ApplyResources(this.ViewPhoto, "ViewPhoto");
+            this.ViewPhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.ViewPhoto.CausesValidation = false;
             this.ViewPhoto.Cursor = System.Windows.Forms.Cursors.Default;
             this.ViewPhoto.FlatAppearance.BorderSize = 0;
@@ -311,7 +311,7 @@
         private System.Windows.Forms.TextBox ItemSupplier;
         private System.Windows.Forms.Button CreateInventory;
         private System.Windows.Forms.Label label13;
-        private CustomControls.RJControls.RJToggleButton InventoryActive;
+        public CustomControls.RJControls.RJToggleButton InventoryActive;
         private System.Windows.Forms.Button DeleteInventory;
         private System.Windows.Forms.Button SaveInventory;
         private System.Windows.Forms.Button FindInventory;

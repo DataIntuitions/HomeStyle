@@ -67,6 +67,13 @@ namespace HomeStyling.CustomerManagement
                     else error.ErrorMessage.Text = "Indtast venligst varenr";
                     error.ShowDialog();
                 }
+                else if (ItemNr.Text.Length <5)
+                {
+
+                    if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "Please Enter 5 digit Item Nr";
+                    else error.ErrorMessage.Text = "Indtast venligst 5-cifret varenr";
+                    error.ShowDialog();
+                }
                 else if (ItemCount.Text == "" || ItemCountBeforeSale.Text == "")
                 {
 
@@ -239,8 +246,8 @@ namespace HomeStyling.CustomerManagement
                         cmd.Parameters.AddWithValue("@ItemCountBeforeSale", Int32.Parse(ItemCountBeforeSale.Text));
                         cmd.Parameters.AddWithValue("@ItemPrice", ItemPrice.Text);
                         cmd.Parameters.AddWithValue("@ItemSupplier", ItemSupplier.Text);
-                        cmd.Parameters.AddWithValue("@ItemImagePath", "");
-                        cmd.Parameters.AddWithValue("@ItemImageAbsolutePath", "");
+                        cmd.Parameters.AddWithValue("@ItemImagePath", ItemImagePath.Text);
+                        cmd.Parameters.AddWithValue("@ItemImageAbsolutePath", ItemImagePath.Text);
                         cmd.Parameters.AddWithValue("@ItemIsActive", InventoryActive.Checked);
                         cmd.Parameters.AddWithValue("@Id", Int32.Parse(ItemId.Text));
 

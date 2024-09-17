@@ -333,7 +333,7 @@
         private System.Windows.Forms.TextBox StylingContactPersonName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label13;
-        private CustomControls.RJControls.RJToggleButton StylingIsActive;
+        public CustomControls.RJControls.RJToggleButton StylingIsActive;
         private System.Windows.Forms.Button DeleteStyling;
         private System.Windows.Forms.Button SaveStyling;
         private System.Windows.Forms.Button FindStyling;

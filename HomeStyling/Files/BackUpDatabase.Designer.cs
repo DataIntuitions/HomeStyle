@@ -42,16 +42,16 @@
             // 
             // ImportPath
             // 
+            resources.ApplyResources(this.ImportPath, "ImportPath");
             this.ImportPath.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
             this.ImportPath.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.ImportPath, "ImportPath");
             this.ImportPath.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.ImportPath.Name = "ImportPath";
             // 
             // BackUpDB
             // 
-            this.BackUpDB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             resources.ApplyResources(this.BackUpDB, "BackUpDB");
+            this.BackUpDB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.BackUpDB.CausesValidation = false;
             this.BackUpDB.Cursor = System.Windows.Forms.Cursors.Default;
             this.BackUpDB.FlatAppearance.BorderSize = 0;

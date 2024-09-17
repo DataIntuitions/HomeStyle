@@ -131,10 +131,10 @@
     <value>Databasefilsti</value>
   </data>
   <data name="SaveDatabasePath.Text" xml:space="preserve">
-    <value>Gemme</value>
+    <value>Gem</value>
   </data>
   <data name="CancelDatabase.Text" xml:space="preserve">
-    <value>Afbestille</value>
+    <value>annullere</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Database forbindelse</value>

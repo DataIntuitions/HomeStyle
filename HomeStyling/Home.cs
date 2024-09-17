@@ -31,7 +31,6 @@ namespace HomeStyling
             InitializeComponent();
             menuStrip1.Renderer = new BlueRenderer();
             //db.con= new SqlConnection("DATA SOURCE=.; DATABASE=HomeStyling; INTEGRATED SECURITY=True;");
-
         }
       
         private void Home_Load(object sender, EventArgs e)
@@ -84,6 +83,7 @@ namespace HomeStyling
         private void customerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Customer customer= new Customer();
+            customer.CustomerIsActive.Checked = true;
             customer.ShowDialog();
         }
 
@@ -115,13 +115,14 @@ namespace HomeStyling
                 }
                 db.con.Close();
             }
-            
+            styling.StylingIsActive.Checked = true;
             styling.ShowDialog();
         }
 
         private void iToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Inventory inventory= new Inventory();
+            inventory.InventoryActive.Checked = true;
             inventory.ShowDialog();
         }
 

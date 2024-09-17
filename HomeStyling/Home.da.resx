@@ -117,28 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="filesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Filer</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="customersToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 27</value>
-  </data>
-  <data name="customersToolStripMenuItem.Text" xml:space="preserve">
-    <value>Kunder</value>
-  </data>
-  <data name="inventoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 27</value>
-  </data>
-  <data name="inventoryToolStripMenuItem.Text" xml:space="preserve">
-    <value>Beholdning</value>
-  </data>
-  <data name="configurationToolStripMenuItem.Text" xml:space="preserve">
-    <value>Konfiguration</value>
-  </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1753, 31</value>
-  </data>
   <data name="importToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>234, 28</value>
   </data>
@@ -167,7 +146,10 @@
     <value>234, 28</value>
   </data>
   <data name="closeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Tæt</value>
+    <value>Afslut</value>
+  </data>
+  <data name="filesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Filer</value>
   </data>
   <data name="customerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 26</value>
@@ -178,23 +160,26 @@
   <data name="stylingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 26</value>
   </data>
-  <data name="iToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 28</value>
+  <data name="customersToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 27</value>
+  </data>
+  <data name="customersToolStripMenuItem.Text" xml:space="preserve">
+    <value>Kunder</value>
   </data>
   <data name="iToolStripMenuItem.Text" xml:space="preserve">
     <value>Varekatalog</value>
   </data>
-  <data name="checkInToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 28</value>
-  </data>
   <data name="checkInToolStripMenuItem.Text" xml:space="preserve">
-    <value>ndtjekning</value>
-  </data>
-  <data name="checkOutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 28</value>
+    <value>Indtjekning</value>
   </data>
   <data name="checkOutToolStripMenuItem.Text" xml:space="preserve">
     <value>Udtjekning</value>
+  </data>
+  <data name="inventoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 27</value>
+  </data>
+  <data name="inventoryToolStripMenuItem.Text" xml:space="preserve">
+    <value>Beholdning</value>
   </data>
   <data name="databaseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>214, 28</value>
@@ -204,6 +189,12 @@
   </data>
   <data name="appsettingToolStripMenuItem.Text" xml:space="preserve">
     <value>App indstilling</value>
+  </data>
+  <data name="configurationToolStripMenuItem.Text" xml:space="preserve">
+    <value>Konfiguration</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1753, 31</value>
   </data>
   <data name="roundedButton2.Text" xml:space="preserve">
     <value>Udtjekning</value>

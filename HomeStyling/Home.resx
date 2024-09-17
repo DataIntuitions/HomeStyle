@@ -117,325 +117,328 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="importToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 28</value>
+  <data name="appsettingToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 28</value>
   </data>
-  <data name="importToolStripMenuItem.Text" xml:space="preserve">
-    <value>Import</value>
-  </data>
-  <data name="exportToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 28</value>
-  </data>
-  <data name="exportToolStripMenuItem.Text" xml:space="preserve">
-    <value>Export</value>
-  </data>
-  <data name="backUpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 28</value>
-  </data>
-  <data name="backUpToolStripMenuItem.Text" xml:space="preserve">
-    <value>BackUp</value>
-  </data>
-  <data name="restoreToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 28</value>
-  </data>
-  <data name="restoreToolStripMenuItem.Text" xml:space="preserve">
-    <value>Restore</value>
-  </data>
-  <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 28</value>
-  </data>
-  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Close</value>
-  </data>
-  <data name="filesToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt, style=Bold</value>
-  </data>
-  <data name="filesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 27</value>
-  </data>
-  <data name="filesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Files</value>
-  </data>
-  <data name="customerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 26</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="roundedButton1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="customerToolStripMenuItem.Text" xml:space="preserve">
     <value>Customer</value>
   </data>
-  <data name="stylingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 26</value>
-  </data>
-  <data name="stylingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Stylings</value>
-  </data>
-  <data name="customersToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt, style=Bold</value>
-  </data>
-  <data name="customersToolStripMenuItem.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>White</value>
-  </data>
-  <data name="customersToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 27</value>
-  </data>
-  <data name="customersToolStripMenuItem.Text" xml:space="preserve">
-    <value>Customers</value>
-  </data>
-  <data name="iToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 28</value>
-  </data>
-  <data name="iToolStripMenuItem.Text" xml:space="preserve">
-    <value>Item Cataloug</value>
-  </data>
-  <data name="checkInToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 28</value>
-  </data>
-  <data name="checkInToolStripMenuItem.Text" xml:space="preserve">
-    <value>Check-In</value>
-  </data>
-  <data name="checkOutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 28</value>
-  </data>
-  <data name="checkOutToolStripMenuItem.Text" xml:space="preserve">
-    <value>Check-Out</value>
-  </data>
-  <data name="inventoryToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt, style=Bold</value>
-  </data>
-  <data name="inventoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 27</value>
-  </data>
-  <data name="inventoryToolStripMenuItem.Text" xml:space="preserve">
-    <value>Inventory</value>
-  </data>
-  <data name="databaseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 28</value>
-  </data>
-  <data name="databaseToolStripMenuItem.Text" xml:space="preserve">
-    <value>Database</value>
-  </data>
-  <data name="appsettingToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 28</value>
-  </data>
-  <data name="appsettingToolStripMenuItem.Text" xml:space="preserve">
-    <value>App setting</value>
-  </data>
-  <data name="configurationToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt, style=Bold</value>
-  </data>
-  <data name="configurationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 27</value>
-  </data>
-  <data name="configurationToolStripMenuItem.Text" xml:space="preserve">
-    <value>Configuration</value>
-  </data>
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1748, 31</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="roundedButton2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="roundedButton2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
-  </data>
-  <data name="roundedButton2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="roundedButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1420, 464</value>
-  </data>
-  <data name="roundedButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>237, 196</value>
-  </data>
-  <data name="roundedButton2.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="roundedButton2.Text" xml:space="preserve">
-    <value>Check-Out</value>
-  </data>
-  <data name="&gt;&gt;roundedButton2.Name" xml:space="preserve">
-    <value>roundedButton2</value>
-  </data>
-  <data name="&gt;&gt;roundedButton2.Type" xml:space="preserve">
-    <value>HomeStyling.CSS.RoundedButton, HomeStyling, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;roundedButton2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;roundedButton2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="roundedButton1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="roundedButton1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
-  </data>
-  <data name="roundedButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="roundedButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>190, 464</value>
-  </data>
-  <data name="roundedButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>237, 196</value>
-  </data>
-  <data name="roundedButton1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="roundedButton1.Text" xml:space="preserve">
-    <value>Check-In</value>
-  </data>
-  <data name="&gt;&gt;roundedButton1.Name" xml:space="preserve">
-    <value>roundedButton1</value>
-  </data>
-  <data name="&gt;&gt;roundedButton1.Type" xml:space="preserve">
-    <value>HomeStyling.CSS.RoundedButton, HomeStyling, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;roundedButton1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;roundedButton1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1748, 683</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Home</value>
-  </data>
-  <data name="&gt;&gt;filesToolStripMenuItem.Name" xml:space="preserve">
-    <value>filesToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;filesToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;importToolStripMenuItem.Name" xml:space="preserve">
-    <value>importToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;importToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;exportToolStripMenuItem.Name" xml:space="preserve">
-    <value>exportToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;exportToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;backUpToolStripMenuItem.Name" xml:space="preserve">
-    <value>backUpToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;backUpToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;restoreToolStripMenuItem.Name" xml:space="preserve">
-    <value>restoreToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;restoreToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;closeToolStripMenuItem.Name" xml:space="preserve">
-    <value>closeToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;closeToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;customersToolStripMenuItem.Name" xml:space="preserve">
-    <value>customersToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;customersToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;customerToolStripMenuItem.Name" xml:space="preserve">
-    <value>customerToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;customerToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;stylingsToolStripMenuItem.Name" xml:space="preserve">
-    <value>stylingsToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;stylingsToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;inventoryToolStripMenuItem.Name" xml:space="preserve">
-    <value>inventoryToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;inventoryToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 28</value>
   </data>
   <data name="&gt;&gt;iToolStripMenuItem.Name" xml:space="preserve">
     <value>iToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;iToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkInToolStripMenuItem.Name" xml:space="preserve">
-    <value>checkInToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;checkInToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkOutToolStripMenuItem.Name" xml:space="preserve">
-    <value>checkOutToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;checkOutToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;configurationToolStripMenuItem.Name" xml:space="preserve">
-    <value>configurationToolStripMenuItem</value>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;configurationToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;stylingsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1748, 31</value>
+  </data>
+  <data name="configurationToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;closeToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;databaseToolStripMenuItem.Name" xml:space="preserve">
     <value>databaseToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;databaseToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;backUpToolStripMenuItem.Name" xml:space="preserve">
+    <value>backUpToolStripMenuItem</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="importToolStripMenuItem.Text" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="inventoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 27</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="customersToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 27</value>
+  </data>
+  <data name="iToolStripMenuItem.Text" xml:space="preserve">
+    <value>Item Cataloug</value>
+  </data>
+  <data name="roundedButton2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;restoreToolStripMenuItem.Name" xml:space="preserve">
+    <value>restoreToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;checkOutToolStripMenuItem.Name" xml:space="preserve">
+    <value>checkOutToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;customerToolStripMenuItem.Name" xml:space="preserve">
+    <value>customerToolStripMenuItem</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="roundedButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="roundedButton1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
+  </data>
+  <data name="roundedButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="stylingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Stylings</value>
+  </data>
+  <data name="&gt;&gt;roundedButton2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="customersToolStripMenuItem.Text" xml:space="preserve">
+    <value>Customers</value>
+  </data>
+  <data name="customersToolStripMenuItem.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;inventoryToolStripMenuItem.Name" xml:space="preserve">
+    <value>inventoryToolStripMenuItem</value>
+  </data>
+  <data name="roundedButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;customersToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="roundedButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1420, 464</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="filesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 27</value>
+  </data>
+  <data name="roundedButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 196</value>
+  </data>
+  <data name="&gt;&gt;filesToolStripMenuItem.Name" xml:space="preserve">
+    <value>filesToolStripMenuItem</value>
+  </data>
+  <data name="checkOutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 28</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="checkInToolStripMenuItem.Text" xml:space="preserve">
+    <value>Check-In</value>
+  </data>
+  <data name="&gt;&gt;importToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="exportToolStripMenuItem.Text" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="&gt;&gt;roundedButton1.Type" xml:space="preserve">
+    <value>HomeStyling.CSS.RoundedButton, HomeStyling, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;configurationToolStripMenuItem.Name" xml:space="preserve">
+    <value>configurationToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;filesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;roundedButton1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="customersToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;appsettingToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;roundedButton2.Name" xml:space="preserve">
+    <value>roundedButton2</value>
+  </data>
+  <data name="inventoryToolStripMenuItem.Text" xml:space="preserve">
+    <value>Inventory</value>
+  </data>
+  <data name="&gt;&gt;backUpToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customersToolStripMenuItem.Name" xml:space="preserve">
+    <value>customersToolStripMenuItem</value>
+  </data>
+  <data name="roundedButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 196</value>
+  </data>
+  <data name="databaseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 28</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;roundedButton2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="configurationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 27</value>
+  </data>
+  <data name="&gt;&gt;stylingsToolStripMenuItem.Name" xml:space="preserve">
+    <value>stylingsToolStripMenuItem</value>
+  </data>
+  <data name="filesToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;checkInToolStripMenuItem.Name" xml:space="preserve">
+    <value>checkInToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;iToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="inventoryToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;restoreToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="configurationToolStripMenuItem.Text" xml:space="preserve">
+    <value>Configuration</value>
+  </data>
+  <data name="restoreToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 28</value>
+  </data>
+  <data name="&gt;&gt;exportToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="importToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 28</value>
+  </data>
+  <data name="customerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 26</value>
+  </data>
+  <data name="roundedButton2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="restoreToolStripMenuItem.Text" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="&gt;&gt;exportToolStripMenuItem.Name" xml:space="preserve">
+    <value>exportToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="stylingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 26</value>
+  </data>
+  <data name="roundedButton2.Text" xml:space="preserve">
+    <value>Check-Out</value>
+  </data>
+  <data name="backUpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 28</value>
   </data>
   <data name="&gt;&gt;appsettingToolStripMenuItem.Name" xml:space="preserve">
     <value>appsettingToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;appsettingToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;checkOutToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="appsettingToolStripMenuItem.Text" xml:space="preserve">
+    <value>App setting</value>
+  </data>
+  <data name="&gt;&gt;closeToolStripMenuItem.Name" xml:space="preserve">
+    <value>closeToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;databaseToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Home</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
+  <data name="&gt;&gt;inventoryToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1748, 683</value>
+  </data>
+  <data name="roundedButton1.Text" xml:space="preserve">
+    <value>Check-In</value>
+  </data>
+  <data name="databaseToolStripMenuItem.Text" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="backUpToolStripMenuItem.Text" xml:space="preserve">
+    <value>BackUp</value>
+  </data>
+  <data name="roundedButton2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;checkInToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;roundedButton1.Name" xml:space="preserve">
+    <value>roundedButton1</value>
+  </data>
+  <data name="iToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 28</value>
+  </data>
+  <data name="&gt;&gt;customerToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;importToolStripMenuItem.Name" xml:space="preserve">
+    <value>importToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;roundedButton2.Type" xml:space="preserve">
+    <value>HomeStyling.CSS.RoundedButton, HomeStyling, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="filesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Files</value>
+  </data>
+  <data name="exportToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 28</value>
+  </data>
+  <data name="roundedButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>190, 464</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="checkOutToolStripMenuItem.Text" xml:space="preserve">
+    <value>Check-Out</value>
+  </data>
+  <data name="&gt;&gt;roundedButton1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="checkInToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 28</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>da</value>
+  </metadata>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

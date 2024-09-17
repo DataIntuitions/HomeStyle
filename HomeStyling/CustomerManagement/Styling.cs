@@ -116,6 +116,7 @@ namespace HomeStyling.CustomerManagement
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@StylingName", StylingName.Text);
                     cmd.Parameters.AddWithValue("@StylingContactPerson", StylingContactPersonName.Text);
+                    cmd.Parameters.AddWithValue("@StylingAddress", StylingLocation.Text);
                     //cmd.Parameters.AddWithValue("@CustomerNr ", CustomerDropDown.SelectedItem==null?"":CustomerDropDown.SelectedItem);
 
                     // open connection, execute INSERT, close connection

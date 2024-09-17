@@ -67,12 +67,7 @@ namespace HomeStyling.InventoryManagement
                         ExportItemModel model = new ExportItemModel();
                         model.ItemNr = sdr["ItemNr"].ToString();
                         model.ItemName = sdr["ItemName"].ToString();
-                        model.ItemCount = Convert.ToInt32(sdr["ItemSent"]);
-                        model.ItemCountAfterSale = Convert.ToInt32(sdr["ItemCountRemaning"]);
-                        model.ItemPrice = sdr["Price"].ToString();
-                        model.ItemSupplier = sdr["Supplier"].ToString();
-                        model.StylingAddrress = sdr["StylingAddrress"].ToString();
-                        model.StylingName = sdr["StylingName"].ToString();
+                        model.ItemCount = Convert.ToInt32(sdr["ItemCount"]);
                         list.Add(model);
 
                     }
@@ -139,17 +134,23 @@ namespace HomeStyling.InventoryManagement
                     else error.ErrorMessage.Text = "Indtast venligst styling-adresser til kassen";
                     error.ShowDialog();
                 }
-
+                else if (OItemCount.Text == "" || OItemCount.Text == "0")
+                {
+                    OItemCount.Text = "1";
+                }
+                else if (int.Parse(OItemCount.Text)<1)
+                {
+                    if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "Item Count cannot be negaitive";
+                    else error.ErrorMessage.Text = "Antallet af varer kan ikke være negativt";
+                    error.ShowDialog();
+                }
                 else
                 {
                     
                     string query = "spCheckoutItem";
 
 
-                    if(OItemCount.Text=="" || OItemCount.Text == "0")
-                    {
-                        OItemCount.Text = "1";
-                    }
+                   
                     DBConn db= new DBConn(); using (db.con)
                     using (SqlCommand cmd = new SqlCommand(query, db.con))
                     {
@@ -176,11 +177,16 @@ namespace HomeStyling.InventoryManagement
                         //}
                         //else
                         //{
-                            error.ErrorMessage.ForeColor = System.Drawing.SystemColors.ScrollBar;
-                            if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "Item is now checkout";
-                            else error.ErrorMessage.Text = "Varen er nu til kassen";
-                            error.ShowDialog();
-                       // }
+                        //error.ErrorMessage.ForeColor = System.Drawing.SystemColors.ScrollBar;
+                        //if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "Item is now checkout";
+                        //else error.ErrorMessage.Text = "Varen er nu til kassen";
+                        //error.ShowDialog();
+
+                        // }
+                        OItemNr.Text = "";
+                        OItemNr.Focus();
+                        ShowPopupForOneSecond();
+                        
                         db.con.Close();
                       
                     }
@@ -199,7 +205,35 @@ namespace HomeStyling.InventoryManagement
                 error.ShowDialog();
             }
         }
+        private void ShowPopupForOneSecond()
+        {
+            var culture = System.Globalization.CultureInfo.CurrentCulture;
+            ErrorModal error = new ErrorModal();
+            // Create and show the popup form
+            //using (error)
+            //{
+                error.StartPosition = FormStartPosition.CenterScreen;
+                error.ErrorMessage.ForeColor = System.Drawing.SystemColors.ScrollBar;
+                if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "Item is now checkout";
+                else error.ErrorMessage.Text = "Varen er nu til kassen";
+                error.Show();
 
+                // Set up a Timer to close the error after 1 second (1000 milliseconds)
+                Timer timer = new Timer();
+                timer.Interval = 2000; // 1 second
+                timer.Tick += (s, e) =>
+                {
+                    timer.Stop();
+                    error.Close();
+                };
+                timer.Start();
+
+                // Optionally, you might want to keep the main form responsive
+                // while the popup is shown. This ensures the application
+                // does not hang or freeze while the timer is running.
+                Application.DoEvents();
+            //}
+        }
         private void OItemCount_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -262,12 +296,8 @@ namespace HomeStyling.InventoryManagement
                         ExportItemModel model = new ExportItemModel();
                         model.ItemNr = sdr["ItemNr"].ToString();
                         model.ItemName = sdr["ItemName"].ToString();
-                        model.ItemCount = Convert.ToInt32(sdr["ItemSent"]);
-                        model.ItemCountAfterSale = Convert.ToInt32(sdr["ItemCountRemaning"]);
-                        model.ItemPrice = sdr["Price"].ToString();
-                        model.ItemSupplier = sdr["Supplier"].ToString();
-                        model.StylingAddrress = sdr["StylingAddrress"].ToString();
-                        model.StylingName = sdr["StylingName"].ToString();
+                        model.ItemCount = Convert.ToInt32(sdr["ItemCount"]);
+                        
                         list.Add(model);
 
                     }

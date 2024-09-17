@@ -50,7 +50,7 @@
             resources.ApplyResources(this.DatabaseFilePath, "DatabaseFilePath");
             this.DatabaseFilePath.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.DatabaseFilePath.Name = "DatabaseFilePath";
-            this.DatabaseFilePath.TextChanged += new System.EventHandler(this.DatabaseFilePath_TextChanged);
+            //this.DatabaseFilePath.TextChanged += new System.EventHandler(this.DatabaseFilePath_TextChanged);
             // 
             // label5
             // 

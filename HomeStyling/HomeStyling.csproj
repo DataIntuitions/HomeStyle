@@ -370,6 +370,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerManagement\Customer.da.resx">
       <DependentUpon>Customer.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerManagement\Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
@@ -421,12 +422,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InventoryManagement\Inventory.da.resx">
       <DependentUpon>Inventory.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="InventoryManagement\Inventory.resx">
       <DependentUpon>Inventory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerManagement\Styling.da.resx">
       <DependentUpon>Styling.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerManagement\Styling.resx">
       <DependentUpon>Styling.cs</DependentUpon>

@@ -194,10 +194,10 @@
     <value>Indtast telefonnummer:</value>
   </data>
   <data name="CreateCustomer.Text" xml:space="preserve">
-    <value>skab</value>
+    <value>opret</value>
   </data>
   <data name="SaveCustomer.Text" xml:space="preserve">
-    <value>Gemme</value>
+    <value>Gem</value>
   </data>
   <data name="DeleteCustomer.Text" xml:space="preserve">
     <value>Slet</value>

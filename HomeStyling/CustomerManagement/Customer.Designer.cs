@@ -439,7 +439,7 @@
         private System.Windows.Forms.Button FindCustomer;
         private System.Windows.Forms.Button SaveCustomer;
         private System.Windows.Forms.Button DeleteCustomer;
-        private CustomControls.RJControls.RJToggleButton CustomerIsActive;
+        public CustomControls.RJControls.RJToggleButton CustomerIsActive;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox CustomerAdditionalName;
     }

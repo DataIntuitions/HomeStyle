@@ -136,27 +136,44 @@ namespace HomeStyling.Files
                 }
                 else if (itemList.Items.Count > 0)
                 {
+                    //using (SqlConnection connection = new SqlConnection(connectionString))
+                    //{
+                    //    connection.Open();
+
+                    //    foreach (Item item in itemList.Items)
+                    //    {
+                    //        using (SqlCommand command = new SqlCommand("delete from Inventory", connection))
+                    //        {
+
+
+                    //            command.ExecuteNonQuery();
+                    //        }
+                    //    }
+                    //}
                     using (SqlConnection connection = new SqlConnection(connectionString))
                     {
                         connection.Open();
 
                         foreach (Item item in itemList.Items)
                         {
-                            using (SqlCommand command = new SqlCommand("delete from Inventory", connection))
-                            {
-
-
-                                command.ExecuteNonQuery();
-                            }
-                        }
-                    }
-                    using (SqlConnection connection = new SqlConnection(connectionString))
-                    {
-                        connection.Open();
-
-                        foreach (Item item in itemList.Items)
-                        {
-                            using (SqlCommand command = new SqlCommand("INSERT INTO Inventory (ItemNr, ItemName, ItemCount, ItemCountBeforeSale, ItemPrice, ItemSupplier,ItemImagePath,ItemImageAbsolutePath,ItemIsActive) VALUES (@ItemNr, @ItemName, @ItemCount, @ItemCountBeforeSale, @ItemPrice, @ItemSupplier, @ItemImagePath, @ItemImageAbsolutePath, @ItemIsActive\r\n)", connection))
+                            //using (SqlCommand command = new SqlCommand("INSERT INTO Inventory (ItemNr, ItemName, ItemCount, ItemCountBeforeSale, ItemPrice, ItemSupplier,ItemImagePath,ItemImageAbsolutePath,ItemIsActive) VALUES (@ItemNr, @ItemName, @ItemCount, @ItemCountBeforeSale, @ItemPrice, @ItemSupplier, @ItemImagePath, @ItemImageAbsolutePath, @ItemIsActive\r\n)", connection))
+                            using (SqlCommand command = new SqlCommand(@"
+                                                                            MERGE INTO Inventory AS target
+                                                                            USING (SELECT @ItemNr AS ItemNr) AS source
+                                                                            ON (target.ItemNr = source.ItemNr)
+                                                                            WHEN MATCHED THEN 
+                                                                                UPDATE SET 
+                                                                                    ItemName = @ItemName,
+                                                                                    ItemCount = @ItemCount,
+                                                                                    ItemCountBeforeSale = @ItemCountBeforeSale,
+                                                                                    ItemPrice = @ItemPrice,
+                                                                                    ItemSupplier = @ItemSupplier,
+                                                                                    ItemImagePath = @ItemImagePath,
+                                                                                    ItemImageAbsolutePath = @ItemImageAbsolutePath,
+                                                                                    ItemIsActive = @ItemIsActive
+                                                                            WHEN NOT MATCHED THEN
+                                                                                INSERT (ItemNr, ItemName, ItemCount, ItemCountBeforeSale, ItemPrice, ItemSupplier, ItemImagePath, ItemImageAbsolutePath, ItemIsActive)
+                                                                                VALUES (@ItemNr, @ItemName, @ItemCount, @ItemCountBeforeSale, @ItemPrice, @ItemSupplier, @ItemImagePath, @ItemImageAbsolutePath, @ItemIsActive);", connection))
                             {
                                 command.Parameters.AddWithValue("@ItemNr", item.ItemNr);
                                 command.Parameters.AddWithValue("@ItemName", item.Description);
@@ -230,19 +247,23 @@ namespace HomeStyling.Files
 
                 items.Add(item);
             }
+            var mergedItems = items
+           .GroupBy(item => item.ItemNr)
+           .Select(group => group.First())
+           .ToList();
             result.Items = items;
 
-            ErrorModal error = new ErrorModal();
-            var culture = System.Globalization.CultureInfo.CurrentCulture;
-            if (items.GroupBy(i => i.ItemNr).Any(g => g.Count() > 1))
-            {
+            //ErrorModal error = new ErrorModal();
+            //var culture = System.Globalization.CultureInfo.CurrentCulture;
+            //if (items.GroupBy(i => i.ItemNr).Any(g => g.Count() > 1))
+            //{
 
-                result.IsRepeatedNR = true;
-            }
-            else
-            {
-                result.IsRepeatedNR = false;
-            }
+            //    result.IsRepeatedNR = true;
+            //}
+            //else
+            //{
+            //    result.IsRepeatedNR = false;
+            //}
             return result;
         }
 

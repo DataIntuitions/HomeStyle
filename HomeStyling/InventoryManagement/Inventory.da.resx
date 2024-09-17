@@ -117,18 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ItemName.Text" xml:space="preserve">
-    <value>Tingens navn</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 17</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Tingens navn:</value>
-  </data>
-  <data name="ItemNr.Text" xml:space="preserve">
-    <value>Indtast nummer</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 17</value>
@@ -166,20 +160,14 @@
   <data name="label6.Text" xml:space="preserve">
     <value>Pris:</value>
   </data>
-  <data name="ItemPrice.Text" xml:space="preserve">
-    <value>Varepris</value>
-  </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 17</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
     <value>Leverandør:</value>
   </data>
-  <data name="ItemSupplier.Text" xml:space="preserve">
-    <value>Input leverandør</value>
-  </data>
   <data name="CreateInventory.Text" xml:space="preserve">
-    <value>skab</value>
+    <value>opret</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 17</value>
@@ -191,10 +179,13 @@
     <value>Slet</value>
   </data>
   <data name="SaveInventory.Text" xml:space="preserve">
-    <value>Gemme</value>
+    <value>Gem</value>
   </data>
   <data name="InventoryAddPhoto.Text" xml:space="preserve">
     <value>Tilføj billede</value>
+  </data>
+  <data name="ViewPhoto.Text" xml:space="preserve">
+    <value>Se foto</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Beholdning</value>
