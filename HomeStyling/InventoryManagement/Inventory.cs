@@ -81,6 +81,12 @@ namespace HomeStyling.CustomerManagement
                     else error.ErrorMessage.Text = "Indtast vareantal og vareantal før salg";
                     error.ShowDialog();
                 }
+                else if(ItemCount.Text == "0" || ItemCountBeforeSale.Text == "0")
+                {
+                    if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "Please enter Item Count and Item Count before sale";
+                    else error.ErrorMessage.Text = "Indtast vareantal og vareantal før salg";
+                    error.ShowDialog();
+                }
                 else
                 {
 
@@ -361,27 +367,36 @@ namespace HomeStyling.CustomerManagement
                         // Save the image in the selected format
                         string extension = Path.GetExtension(filePath).ToLower();
                         ItemImagePath.Text = filePath;
+                        string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
+                        string directory = Path.GetDirectoryName(filePath);
+                        string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(filePath);
+                        string fileExtension = Path.GetExtension(filePath);
+
+                        // Create a new file name with timestamp
+                        string newFileName = $"{fileNameWithoutExtension}_{timestamp}{fileExtension}";
+                        string newFilePath = Path.Combine(directory, newFileName);
+
                         currentImage = Image.FromFile(openFileDialog.FileName);
 
-                        switch (extension)
-                        {
-                            case ".jpg":
-                            case ".jpeg":
-                                currentImage.Save(filePath, System.Drawing.Imaging.ImageFormat.Jpeg);
-                                break;
-                            case ".png":
-                                currentImage.Save(filePath, System.Drawing.Imaging.ImageFormat.Png);
-                                break;
-                            case ".bmp":
-                                currentImage.Save(filePath, System.Drawing.Imaging.ImageFormat.Bmp);
-                                break;
-                            case ".gif":
-                                currentImage.Save(filePath, System.Drawing.Imaging.ImageFormat.Gif);
-                                break;
-                            default:
-                                MessageBox.Show("Unsupported file format.");
-                                break;
-                        }
+                        //switch (extension)
+                        //{
+                        //    case ".jpg":
+                        //    case ".jpeg":
+                        //        currentImage.Save(newFilePath, System.Drawing.Imaging.ImageFormat.Jpeg);
+                        //        break;
+                        //    case ".png":
+                        //        currentImage.Save(newFilePath, System.Drawing.Imaging.ImageFormat.Png);
+                        //        break;
+                        //    case ".bmp":
+                        //        currentImage.Save(newFilePath, System.Drawing.Imaging.ImageFormat.Bmp);
+                        //        break;
+                        //    case ".gif":
+                        //        currentImage.Save(newFilePath, System.Drawing.Imaging.ImageFormat.Gif);
+                        //        break;
+                        //    default:
+                        //        MessageBox.Show("Unsupported file format.");
+                        //        break;
+                        //}
 
                         MessageBox.Show("Image saved successfully.");
                     }

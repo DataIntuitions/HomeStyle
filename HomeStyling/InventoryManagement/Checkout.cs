@@ -134,9 +134,15 @@ namespace HomeStyling.InventoryManagement
                     else error.ErrorMessage.Text = "Indtast venligst styling-adresser til kassen";
                     error.ShowDialog();
                 }
-                else if (OItemCount.Text == "" || OItemCount.Text == "0")
+                else if (OItemCount.Text == "" )
                 {
                     OItemCount.Text = "1";
+                }
+                else if (OItemCount.Text == "0")
+                {
+                    if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "Item Count should be greater than 0";
+                    else error.ErrorMessage.Text = "Indtast vareantal og vareantal før salg";
+                    error.ShowDialog();
                 }
                 else if (int.Parse(OItemCount.Text)<1)
                 {

@@ -99,9 +99,14 @@ namespace HomeStyling.InventoryManagement
                     else error.ErrorMessage.Text = "Indtast venligst varenr";
                     error.ShowDialog();
                 }
+                else if (IItemNr.Text == "0")
+                {
+                    if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "Item Count should be greater than 0";
+                    else error.ErrorMessage.Text = "Indtast vareantal og vareantal før salg";
+                    error.ShowDialog();
+                }
                 else
                 {
-                    
                     string query = "spCheckInItem";
                     if(IItemCount.Text=="" || IItemCount.Text=="0")
                     {

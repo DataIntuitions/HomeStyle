@@ -132,14 +132,14 @@ namespace HomeStyling.Files
             else
             {
                 
-                string query = "spExportItems";
+                string query = "spItemsForSale";
                 List<InventoryModel> list = new List<InventoryModel>();
                 DBConn db= new DBConn(); using (db.con)
                 using (SqlCommand cmd = new SqlCommand(query, db.con))
                 {
                     // define parameters and their values
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Index", ExportListType.SelectedIndex);
+                   // cmd.Parameters.AddWithValue("@Index", ExportListType.SelectedIndex);
 
 
                     // open connection, execute INSERT, close connection
@@ -148,7 +148,7 @@ namespace HomeStyling.Files
 
                     SqlDataReader reader = cmd.ExecuteReader();
 
-                    if (reader.Read())
+                    while (reader.Read())
                     {
                         InventoryModel model = new InventoryModel()
                         {
@@ -201,8 +201,8 @@ namespace HomeStyling.Files
             }
             else if (ExportListType.SelectedIndex == 0)
             {
-                
-                string query = "select * from inventory";
+
+                string query = "spItemsForSale";
                 List<InventoryModel> list = new List<InventoryModel>();
                 DBConn db= new DBConn(); using (db.con)
                 using (SqlCommand cmd = new SqlCommand(query, db.con))

@@ -202,26 +202,26 @@ namespace HomeStyling
             var culture = System.Globalization.CultureInfo.CurrentCulture;
             ErrorModal error = new ErrorModal();
 
-            
-            string query = "select Id as Id,ItemName as ItemName from Inventory where itemcountbeforesale>1  ";
+            export.ExportListType.Items.Insert(1, "Item for sale");
+            //string query = "select Id as Id,ItemName as ItemName from Inventory where itemcountbeforesale>1  ";
 
-            DBConn db= new DBConn(); using (db.con)
-            using (SqlCommand cmd = new SqlCommand(query, db.con))
-            {
-                // define parameters and their values
+            //DBConn db= new DBConn(); using (db.con)
+            //using (SqlCommand cmd = new SqlCommand(query, db.con))
+            //{
+            //    // define parameters and their values
 
 
-                // open connection, execute INSERT, close connection
-                db.con.Open();
-                SqlDataReader sdr = cmd.ExecuteReader();
-                int i = 1;
-                while (sdr.Read())
-                {
-                    export.ExportListType.Items.Insert(i, sdr["ItemName"].ToString());
-                    i++;
-                }
-                db.con.Close();
-            }
+            //    // open connection, execute INSERT, close connection
+            //    db.con.Open();
+            //    SqlDataReader sdr = cmd.ExecuteReader();
+            //    int i = 1;
+            //    while (sdr.Read())
+            //    {
+            //          export.ExportListType.Items.Insert(i, sdr["ItemName"].ToString());
+            //          i++;
+            //    }
+            //    db.con.Close();
+            //}
             export.ShowDialog();  
         }
 
