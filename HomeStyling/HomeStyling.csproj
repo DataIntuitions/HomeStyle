@@ -386,6 +386,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Files\BackUpDatabase.resx">
       <DependentUpon>BackUpDatabase.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Files\Export.da.resx">
       <DependentUpon>Export.cs</DependentUpon>
@@ -437,9 +438,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Home.da.resx">
       <DependentUpon>Home.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="InventoryManagement\Checkout.da.resx">
       <DependentUpon>Checkout.cs</DependentUpon>

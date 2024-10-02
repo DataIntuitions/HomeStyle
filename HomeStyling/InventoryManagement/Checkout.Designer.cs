@@ -59,9 +59,9 @@
             // 
             // OItemNr
             // 
+            resources.ApplyResources(this.OItemNr, "OItemNr");
             this.OItemNr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
             this.OItemNr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.OItemNr, "OItemNr");
             this.OItemNr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.OItemNr.Name = "OItemNr";
             this.OItemNr.TextChanged += new System.EventHandler(this.OItemNr_TextChanged);
@@ -75,9 +75,9 @@
             // 
             // OItemSelctedName
             // 
+            resources.ApplyResources(this.OItemSelctedName, "OItemSelctedName");
             this.OItemSelctedName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
             this.OItemSelctedName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.OItemSelctedName, "OItemSelctedName");
             this.OItemSelctedName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.OItemSelctedName.Name = "OItemSelctedName";
             // 
@@ -96,17 +96,17 @@
             // 
             // OItemCount
             // 
+            resources.ApplyResources(this.OItemCount, "OItemCount");
             this.OItemCount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
             this.OItemCount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.OItemCount, "OItemCount");
             this.OItemCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.OItemCount.Name = "OItemCount";
             this.OItemCount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OItemCount_KeyPress);
             // 
             // OExportList
             // 
-            this.OExportList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             resources.ApplyResources(this.OExportList, "OExportList");
+            this.OExportList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.OExportList.CausesValidation = false;
             this.OExportList.Cursor = System.Windows.Forms.Cursors.Default;
             this.OExportList.FlatAppearance.BorderSize = 0;
@@ -117,8 +117,8 @@
             // 
             // CheckoutItem
             // 
-            this.CheckoutItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             resources.ApplyResources(this.CheckoutItem, "CheckoutItem");
+            this.CheckoutItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.CheckoutItem.CausesValidation = false;
             this.CheckoutItem.Cursor = System.Windows.Forms.Cursors.Default;
             this.CheckoutItem.FlatAppearance.BorderSize = 0;
@@ -129,8 +129,8 @@
             // 
             // ExportEmail
             // 
-            this.ExportEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             resources.ApplyResources(this.ExportEmail, "ExportEmail");
+            this.ExportEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.ExportEmail.CausesValidation = false;
             this.ExportEmail.Cursor = System.Windows.Forms.Cursors.Default;
             this.ExportEmail.FlatAppearance.BorderSize = 0;
@@ -141,8 +141,8 @@
             // 
             // ExportClipboard
             // 
-            this.ExportClipboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             resources.ApplyResources(this.ExportClipboard, "ExportClipboard");
+            this.ExportClipboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.ExportClipboard.CausesValidation = false;
             this.ExportClipboard.Cursor = System.Windows.Forms.Cursors.Default;
             this.ExportClipboard.FlatAppearance.BorderSize = 0;
@@ -153,8 +153,8 @@
             // 
             // Done
             // 
-            this.Done.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             resources.ApplyResources(this.Done, "Done");
+            this.Done.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.Done.CausesValidation = false;
             this.Done.Cursor = System.Windows.Forms.Cursors.Default;
             this.Done.FlatAppearance.BorderSize = 0;
@@ -165,10 +165,10 @@
             // 
             // OSelectedStylingAddressDropdoen
             // 
+            resources.ApplyResources(this.OSelectedStylingAddressDropdoen, "OSelectedStylingAddressDropdoen");
             this.OSelectedStylingAddressDropdoen.AccessibleRole = System.Windows.Forms.AccessibleRole.Cursor;
             this.OSelectedStylingAddressDropdoen.AllowDrop = true;
             this.OSelectedStylingAddressDropdoen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
-            resources.ApplyResources(this.OSelectedStylingAddressDropdoen, "OSelectedStylingAddressDropdoen");
             this.OSelectedStylingAddressDropdoen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.OSelectedStylingAddressDropdoen.FormattingEnabled = true;
             this.OSelectedStylingAddressDropdoen.Name = "OSelectedStylingAddressDropdoen";

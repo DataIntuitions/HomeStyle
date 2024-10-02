@@ -35,12 +35,12 @@ namespace HomeStyling.InventoryManagement
                 else error.ErrorMessage.Text = "Vælg stylingadresse for at flytte varer\r\n";
                 error.ShowDialog();
             }
-            else if (IItemNr.Text == "")
-            {
-                if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "Please Enter Item Nr";
-                else error.ErrorMessage.Text = "Indtast venligst varenr";
-                error.ShowDialog();
-            }
+            //else if (IItemNr.Text == "")
+            //{
+            //    if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "Please Enter Item Nr";
+            //    else error.ErrorMessage.Text = "Indtast venligst varenr";
+            //    error.ShowDialog();
+            //}
             else
             {
                 MoveItem moveItem = new MoveItem(IStylingAddress.SelectedItem.ToString(),IItemNr.Text);
@@ -167,15 +167,16 @@ namespace HomeStyling.InventoryManagement
         {
             var culture = System.Globalization.CultureInfo.CurrentCulture;
             ErrorModal error = new ErrorModal();
-            if (IItemNr.Text == "")
-            {
-                if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "Please Enter Item Nr";
-                else error.ErrorMessage.Text = "Indtast venligst varenr";
-                error.ShowDialog();
-            }
+            //if (IItemNr.Text == "")
+            //{
+            //    if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "Please Enter Item Nr";
+            //    else error.ErrorMessage.Text = "Indtast venligst varenr";
+            //    error.ShowDialog();
+            //}
 
 
-            else
+            //else
+            if(true)
             {
                 IStylingAddress.Items.Clear();
                 
