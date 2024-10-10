@@ -66,7 +66,7 @@ namespace HomeStyling.InventoryManagement
                 }
                 IStylingAddress.Items.Clear();
                 this.Close();
-                moveItem.Show();
+                moveItem.ShowDialog();
             }
            
         }

@@ -17,7 +17,6 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace HomeStyling.InventoryManagement
@@ -28,12 +27,10 @@ namespace HomeStyling.InventoryManagement
         {
             InitializeComponent();
         }
-
         private void label4_Click(object sender, EventArgs e)
         {
 
         }
-
         private void ExportEmail_Click(object sender, EventArgs e)
         {
             var culture = System.Globalization.CultureInfo.CurrentCulture;
@@ -113,7 +110,6 @@ namespace HomeStyling.InventoryManagement
         {
 
         }
-
         private void CheckoutItem_Click(object sender, EventArgs e)
         {
 
@@ -198,10 +194,6 @@ namespace HomeStyling.InventoryManagement
                     }
                 }
             }
-
-
-            
-            
             catch (Exception ex)
             {
 
@@ -247,7 +239,6 @@ namespace HomeStyling.InventoryManagement
                 e.Handled = true;
             }
         }
-
         private void OItemNr_TextChanged(object sender, EventArgs e)
         {
             if (OItemNr.Text.Length == 5)
@@ -260,7 +251,6 @@ namespace HomeStyling.InventoryManagement
         {
             CheckoutItem_Click(sender,e);
         }
-
         private void OItemNr_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -268,7 +258,6 @@ namespace HomeStyling.InventoryManagement
                 e.Handled = true;
             }
         }
-
         private void ExportClipboard_Click(object sender, EventArgs e)
         {
             var culture = System.Globalization.CultureInfo.CurrentCulture;
@@ -344,7 +333,6 @@ namespace HomeStyling.InventoryManagement
             // The file is not locked
             return false;
         }
-
         public static void CloseExcelProcesses()
         {
             var processes = Process.GetProcessesByName("EXCEL");
@@ -440,7 +428,6 @@ namespace HomeStyling.InventoryManagement
             }
 
         }
-
         private void Done_Click(object sender, EventArgs e)
         {
             this.Close();

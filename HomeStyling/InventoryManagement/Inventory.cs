@@ -362,19 +362,20 @@ namespace HomeStyling.CustomerManagement
                 {
                     try
                     {
-                        string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)+"\\" + openFileDialog.SafeFileName;
+                       // string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)+"\\" + openFileDialog.SafeFileName;
+                        string filePath =openFileDialog.FileName;
                         //string filePath = "C:\\Users\\ahmad\\Downloads\\Items\\" + openFileDialog.SafeFileName;// openFileDialog.FileName;
                         // Save the image in the selected format
-                        string extension = Path.GetExtension(filePath).ToLower();
+                        //string extension = Path.GetExtension(filePath).ToLower();
                         ItemImagePath.Text = filePath;
-                        string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
-                        string directory = Path.GetDirectoryName(filePath);
-                        string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(filePath);
-                        string fileExtension = Path.GetExtension(filePath);
+                        //string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
+                        //string directory = Path.GetDirectoryName(filePath);
+                        //string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(filePath);
+                        //string fileExtension = Path.GetExtension(filePath);
 
-                        // Create a new file name with timestamp
-                        string newFileName = $"{fileNameWithoutExtension}_{timestamp}{fileExtension}";
-                        string newFilePath = Path.Combine(directory, newFileName);
+                        //// Create a new file name with timestamp
+                        //string newFileName = $"{fileNameWithoutExtension}_{timestamp}{fileExtension}";
+                        //string newFilePath = Path.Combine(directory, newFileName);
 
                         currentImage = Image.FromFile(openFileDialog.FileName);
 
@@ -424,9 +425,24 @@ namespace HomeStyling.CustomerManagement
             else
             {
                 ImageView image = new ImageView();
-                image.pictureBox1.Image = Image.FromFile(ItemImagePath.Text);
+                if (File.Exists(ItemImagePath.Text))
+                {
+                    image.pictureBox1.Image = Image.FromFile(ItemImagePath.Text);
+                    image.ShowDialog();
+                }
+                else
+                {
+                  
+                    if (culture.TwoLetterISOLanguageName == "en")
+                        error.ErrorMessage.Text = "Image file not found";
+                    else
+                        error.ErrorMessage.Text = "Billedfilen blev ikke fundet";
+                    error.ShowDialog();
+                }
+                //ImageView image = new ImageView();
+                //image.pictureBox1.Image = Image.FromFile(ItemImagePath.Text);
 
-                image.ShowDialog();
+                //image.ShowDialog();
             }
            
         }
