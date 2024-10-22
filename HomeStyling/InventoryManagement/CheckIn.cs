@@ -110,7 +110,7 @@ namespace HomeStyling.InventoryManagement
                     string query = "spCheckInItem";
                     if(IItemCount.Text=="" || IItemCount.Text=="0")
                     {
-                        IItemCount.Text = "1";
+                        IItemCount.Text = "1"; 
                     }
                     DBConn db= new DBConn(); using (db.con)
                     using (SqlCommand cmd = new SqlCommand(query, db.con))
@@ -175,37 +175,35 @@ namespace HomeStyling.InventoryManagement
             //}
 
 
-            //else
-            if(true)
-            {
-                IStylingAddress.Items.Clear();
+   
+            IStylingAddress.Items.Clear();
                 
-                string query = "spFindStylingAddressItem";
+            string query = "spFindStylingAddressItem";
 
-                DBConn db= new DBConn(); using (db.con)
-                using (SqlCommand cmd = new SqlCommand(query, db.con))
-                {
-                    // define parameters and their values
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@ItemCount", Int32.Parse(IItemCount.Text));
-                    cmd.Parameters.AddWithValue("@ItemNr", IItemNr.Text);
-                    cmd.Parameters.AddWithValue("@SelectedItemName", IItemSelctedName.Text);
-                    // open connection, execute INSERT, close connection
-                    db.con.Open();
+            DBConn db= new DBConn(); using (db.con)
+            using (SqlCommand cmd = new SqlCommand(query, db.con))
+            {
+                // define parameters and their values
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ItemCount", Int32.Parse(IItemCount.Text));
+                cmd.Parameters.AddWithValue("@ItemNr", IItemNr.Text);
+                cmd.Parameters.AddWithValue("@SelectedItemName", IItemSelctedName.Text);
+                // open connection, execute INSERT, close connection
+                db.con.Open();
 
                      
-                    SqlDataReader sdr = cmd.ExecuteReader();
+                SqlDataReader sdr = cmd.ExecuteReader();
 
-                    int i = 0;
-                    while (sdr.Read())
-                    {
-                        IStylingAddress.Items.Insert(i, sdr["StylingAddress"].ToString());
-                        i++;
-                    }
-                    db.con.Close();
-
+                int i = 0;
+                while (sdr.Read())
+                {
+                    IStylingAddress.Items.Insert(i, sdr["StylingAddress"].ToString());
+                    i++;
                 }
+                db.con.Close();
+
             }
+            
         }
     }
 }

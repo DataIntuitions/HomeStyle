@@ -200,6 +200,7 @@ namespace HomeStyling
         {
             Export export=new Export();
             var culture = System.Globalization.CultureInfo.CurrentCulture;
+            //var culture = System.Globalization.CultureInfo.CurrentCulture;
             ErrorModal error = new ErrorModal();
 
             export.ExportListType.Items.Insert(1, "Item for sale");
