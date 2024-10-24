@@ -105,6 +105,12 @@ namespace HomeStyling.InventoryManagement
                     else error.ErrorMessage.Text = "Indtast vareantal og vareantal før salg";
                     error.ShowDialog();
                 }
+                else if (IStylingAddress.SelectedItem == null)
+                {
+                    if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "Please select styling address to move items";
+                    else error.ErrorMessage.Text = "Vælg stylingadresse for at flytte varer\r\n";
+                    error.ShowDialog();
+                }
                 else
                 {
                     string query = "spCheckInItem";
@@ -120,6 +126,7 @@ namespace HomeStyling.InventoryManagement
                         cmd.Parameters.AddWithValue("@ItemCount", Int32.Parse(IItemCount.Text));
                         cmd.Parameters.AddWithValue("@ItemNr", IItemNr.Text);
                         cmd.Parameters.AddWithValue("@SelectedItemName", IItemSelctedName.Text);
+                        cmd.Parameters.AddWithValue("@StylingAddress", IStylingAddress.SelectedItem.ToString());
 
 
                         // open connection, execute INSERT, close connection

@@ -96,15 +96,48 @@ namespace HomeStyling.InventoryManagement
         public static string FormatAsText(List<ExportItemModel> objects)
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("List of Objects:");
-            sb.AppendLine("ItemName\tItemNr\tItemCount");
 
+
+
+            // Create a header with a border
+            sb.AppendLine("List of Objects:");
+            sb.AppendLine(new string('=', 60)); // Top border
+            sb.AppendFormat("|{0}|{1}|{2}|\n", CenterText("Item Name", 65), CenterText("Item Number", 21), CenterText("Item Count", 14));
+            sb.AppendLine(new string('-', 95)); // Border under the header
+
+
+
+            // Format each object with borders
             foreach (var obj in objects)
             {
-                sb.AppendFormat("{0}\t{1}\t{2}\n", obj.ItemName, obj.ItemNr,obj.ItemCount);
+                sb.AppendFormat("|{0}|{1}|{2}|\n",
+                CenterText(obj.ItemName, 72),
+                CenterText(obj.ItemNr.ToString(), 30),
+                CenterText(obj.ItemCount.ToString(), 26));
             }
 
+
+
+            // Add the bottom border
+            sb.AppendLine(new string('=', 60)); // Bottom border
+
+
+
             return sb.ToString();
+        }
+
+
+
+        private static string CenterText(string text, int width)
+        {
+            if (text.Length >= width)
+                return text.Substring(0, width);
+
+
+
+            int leftPadding = (width - text.Length) / 2;
+            int rightPadding = width - text.Length - leftPadding;
+            return new string(' ', leftPadding) + text + new string(' ', rightPadding);
         }
         private void Checkout_Load(object sender, EventArgs e)
         {
