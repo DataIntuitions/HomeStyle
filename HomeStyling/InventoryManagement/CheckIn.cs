@@ -137,9 +137,20 @@ namespace HomeStyling.InventoryManagement
 
                         if (sdr.Read())
                         {
-                            if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "No Record Found";
-                            else error.ErrorMessage.Text = "Ingen registrering fundet";
-                            error.ShowDialog();
+                            int data = sdr.GetInt32(sdr.GetOrdinal("NoData")); // Assuming the column name is "ItemCount"
+                            if(data == 1)
+                            {
+                                if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "Item Count should be equal or less";
+                                else error.ErrorMessage.Text = "vareantal skal være lig med eller mindre";
+                                error.ShowDialog();
+                            }
+                            else
+                            {
+                                if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "No Record Found";
+                                else error.ErrorMessage.Text = "Ingen registrering fundet";
+                                error.ShowDialog();
+                            }
+                           
                         }
                         else
                         {

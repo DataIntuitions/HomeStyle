@@ -46,9 +46,9 @@
             // 
             // IItemNr
             // 
+            resources.ApplyResources(this.IItemNr, "IItemNr");
             this.IItemNr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
             this.IItemNr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.IItemNr, "IItemNr");
             this.IItemNr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.IItemNr.Name = "IItemNr";
             this.IItemNr.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.IItemNr_KeyPress);
@@ -61,9 +61,9 @@
             // 
             // IItemSelctedName
             // 
+            resources.ApplyResources(this.IItemSelctedName, "IItemSelctedName");
             this.IItemSelctedName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
             this.IItemSelctedName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.IItemSelctedName, "IItemSelctedName");
             this.IItemSelctedName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.IItemSelctedName.Name = "IItemSelctedName";
             // 
@@ -75,18 +75,18 @@
             // 
             // IStylingAddress
             // 
+            resources.ApplyResources(this.IStylingAddress, "IStylingAddress");
             this.IStylingAddress.AccessibleRole = System.Windows.Forms.AccessibleRole.Cursor;
             this.IStylingAddress.AllowDrop = true;
             this.IStylingAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
-            resources.ApplyResources(this.IStylingAddress, "IStylingAddress");
             this.IStylingAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.IStylingAddress.FormattingEnabled = true;
             this.IStylingAddress.Name = "IStylingAddress";
             // 
             // MoveItem
             // 
-            this.MoveItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             resources.ApplyResources(this.MoveItem, "MoveItem");
+            this.MoveItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.MoveItem.CausesValidation = false;
             this.MoveItem.Cursor = System.Windows.Forms.Cursors.Default;
             this.MoveItem.FlatAppearance.BorderSize = 0;
@@ -97,9 +97,9 @@
             // 
             // IItemCount
             // 
+            resources.ApplyResources(this.IItemCount, "IItemCount");
             this.IItemCount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
             this.IItemCount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.IItemCount, "IItemCount");
             this.IItemCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.IItemCount.Name = "IItemCount";
             this.IItemCount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.IItemCount_KeyPress);
@@ -125,8 +125,8 @@
             // 
             // CehckInItem
             // 
-            this.CehckInItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             resources.ApplyResources(this.CehckInItem, "CehckInItem");
+            this.CehckInItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.CehckInItem.CausesValidation = false;
             this.CehckInItem.Cursor = System.Windows.Forms.Cursors.Default;
             this.CehckInItem.FlatAppearance.BorderSize = 0;
@@ -137,8 +137,8 @@
             // 
             // GetStylingAddress
             // 
-            this.GetStylingAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             resources.ApplyResources(this.GetStylingAddress, "GetStylingAddress");
+            this.GetStylingAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.GetStylingAddress.CausesValidation = false;
             this.GetStylingAddress.Cursor = System.Windows.Forms.Cursors.Default;
             this.GetStylingAddress.FlatAppearance.BorderSize = 0;
@@ -149,8 +149,8 @@
             // 
             // Done
             // 
-            this.Done.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             resources.ApplyResources(this.Done, "Done");
+            this.Done.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.Done.CausesValidation = false;
             this.Done.Cursor = System.Windows.Forms.Cursors.Default;
             this.Done.FlatAppearance.BorderSize = 0;

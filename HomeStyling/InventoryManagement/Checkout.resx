@@ -131,6 +131,9 @@
   <data name="&gt;&gt;OExportList.Name" xml:space="preserve">
     <value>OExportList</value>
   </data>
+  <data name="&gt;&gt;ExportEmail.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="ExportClipboard.Location" type="System.Drawing.Point, System.Drawing">
     <value>450, 289</value>
   </data>
@@ -165,8 +168,8 @@
   <data name="&gt;&gt;CheckoutItem.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;CheckoutItem.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="ExportEmail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="ExportClipboard.Text" xml:space="preserve">
     <value>Export all item list for selected styling - Clipboard</value>
@@ -204,6 +207,9 @@
   <data name="OItemCount.Text" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="OSelectedStylingAddressDropdoen.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -228,6 +234,9 @@
   <data name="ExportEmail.Size" type="System.Drawing.Size, System.Drawing">
     <value>407, 32</value>
   </data>
+  <data name="&gt;&gt;OItemNr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="OExportList.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
   </data>
@@ -249,8 +258,8 @@
   <data name="CheckoutItem.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
   </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 242</value>
+  <data name="&gt;&gt;CheckoutItem.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Styling Address:</value>
@@ -309,8 +318,8 @@
   <data name="OItemSelctedName.Location" type="System.Drawing.Point, System.Drawing">
     <value>52, 198</value>
   </data>
-  <data name="&gt;&gt;ExportEmail.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;OExportList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;OExportList.Parent" xml:space="preserve">
     <value>$this</value>
@@ -363,9 +372,6 @@
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="OItemSelctedName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 23</value>
-  </data>
   <data name="OExportList.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 7.8pt, style=Bold</value>
   </data>
@@ -417,8 +423,8 @@
   <data name="ExportClipboard.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;OItemNr.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 17</value>
   </data>
   <data name="&gt;&gt;ExportClipboard.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -428,9 +434,6 @@
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="&gt;&gt;OExportList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="CheckoutItem.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -486,6 +489,9 @@
   <data name="&gt;&gt;Done.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 242</value>
+  </data>
   <data name="&gt;&gt;OSelectedStylingAddressDropdoen.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -497,9 +503,6 @@
   </data>
   <data name="ExportClipboard.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8pt, style=Bold</value>
   </data>
   <data name="Done.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -519,11 +522,8 @@
   <data name="label4.Text" xml:space="preserve">
     <value>Item Count:</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 17</value>
-  </data>
-  <data name="ExportEmail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="OItemSelctedName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 23</value>
   </data>
   <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8pt, style=Bold</value>
@@ -540,8 +540,8 @@
   <data name="OItemNr.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
   </data>
-  <data name="OSelectedStylingAddressDropdoen.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8pt, style=Bold</value>
   </data>
   <data name="OItemCount.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
