@@ -128,13 +128,16 @@
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="MoveItem.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <data name="IItemCount.Text" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="&gt;&gt;CehckInItem.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="CehckInItem.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
@@ -171,9 +174,6 @@
   <data name="&gt;&gt;Done.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;IStylingAddress.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
@@ -183,6 +183,9 @@
   <data name="CustomerManagementLabel.Text" xml:space="preserve">
     <value>Check-In</value>
   </data>
+  <data name="CehckInItem.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="CustomerManagementLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 25</value>
   </data>
@@ -191,6 +194,9 @@
   </data>
   <data name="&gt;&gt;IStylingAddress.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="&gt;&gt;CehckInItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="CehckInItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 32</value>
@@ -212,9 +218,6 @@
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="Done.Location" type="System.Drawing.Point, System.Drawing">
-    <value>542, 442</value>
   </data>
   <data name="IItemSelctedName.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -294,8 +297,8 @@
   <data name="IItemCount.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
   </data>
-  <data name="&gt;&gt;IItemNr.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Check In</value>
   </data>
   <data name="MoveItem.Text" xml:space="preserve">
     <value>Move Item</value>
@@ -339,14 +342,14 @@
   <data name="&gt;&gt;MoveItem.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Check In</value>
-  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Item Nr:</value>
   </data>
   <data name="IItemSelctedName.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8pt</value>
+  </data>
+  <data name="&gt;&gt;IItemNr.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
@@ -399,17 +402,14 @@
   <data name="&gt;&gt;Done.Name" xml:space="preserve">
     <value>Done</value>
   </data>
-  <data name="GetStylingAddress.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="IItemNr.Size" type="System.Drawing.Size, System.Drawing">
     <value>357, 23</value>
   </data>
   <data name="&gt;&gt;CustomerManagementLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;CehckInItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;IStylingAddress.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -429,8 +429,8 @@
   <data name="CehckInItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 7.8pt, style=Bold</value>
   </data>
-  <data name="MoveItem.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="Done.Location" type="System.Drawing.Point, System.Drawing">
+    <value>542, 442</value>
   </data>
   <data name="CehckInItem.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -456,9 +456,6 @@
   <data name="CustomerManagementLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;IItemNr.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Item Selected Name:</value>
   </data>
@@ -468,7 +465,7 @@
   <data name="GetStylingAddress.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="CehckInItem.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="GetStylingAddress.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
@@ -543,6 +540,9 @@
   <data name="&gt;&gt;IItemSelctedName.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;IItemNr.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
   <data name="CehckInItem.Text" xml:space="preserve">
     <value>Check-In</value>
   </data>
@@ -555,8 +555,8 @@
   <data name="Done.Text" xml:space="preserve">
     <value>Done</value>
   </data>
-  <data name="&gt;&gt;IItemNr.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="&gt;&gt;IItemNr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>

@@ -382,30 +382,117 @@ namespace HomeStyling.InventoryManagement
                 }
             }
         }
+        //private void OExportList_Click(object sender, EventArgs e)
+        //{
+        //    var culture = System.Globalization.CultureInfo.CurrentCulture;
+        //    ErrorModal error = new ErrorModal();
+        //    if (OSelectedStylingAddressDropdoen.SelectedItem == null)
+        //    {
+
+        //        if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "Please select Styling Address";
+        //        else error.ErrorMessage.Text = "Vælg venligst stylingadresse";
+        //        error.ShowDialog();
+        //    }
+        //    else
+        //    {
+
+        //        var memory = new MemoryStream();
+        //        string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+        //        //string filePath = "C:\\Users\\ahmad\\Downloads\\Items\\"; // openFileDialog.FileName;
+        //        string sFileName = @"exportList.xlsx";
+        //        if (IsFileLocked(Path.Combine(filePath, sFileName)))
+        //        {
+
+        //            CloseExcelProcesses();
+        //        }
+        //        using (var fs = new FileStream(Path.Combine(filePath, sFileName), FileMode.Create, FileAccess.Write))
+        //        {
+        //            IWorkbook workbook;
+        //            workbook = new XSSFWorkbook();
+        //            ISheet excelSheet = workbook.CreateSheet("ExportItems");
+        //            IRow row = excelSheet.CreateRow(0);
+        //            var currentCell = 0;
+
+        //            row.CreateCell(currentCell++).SetCellValue("ItemNr");
+        //            row.CreateCell(currentCell++).SetCellValue("ItemCount");
+        //            row.CreateCell(currentCell++).SetCellValue("StylingAddress");
+
+        //            var counter = 1;
+        //            currentCell = 0;
+
+        //            string query = "spExportCheckoutItem";
+
+        //            DBConn db= new DBConn(); using (db.con)
+        //            using (SqlCommand cmd = new SqlCommand(query, db.con))
+        //            {
+        //                // define parameters and their values
+        //                cmd.CommandType = CommandType.StoredProcedure;
+        //                cmd.Parameters.AddWithValue("@Index", OSelectedStylingAddressDropdoen.SelectedIndex + 1);
+
+
+        //                // open connection, execute INSERT, close connection
+        //                db.con.Open();
+        //                SqlDataReader sdr = cmd.ExecuteReader();
+        //                List<ExportItemModel> list = new List<ExportItemModel>();
+        //                while (sdr.Read())
+        //                {
+        //                    ExportItemModel model = new ExportItemModel();
+        //                    model.ItemNr = sdr["ItemNr"].ToString();
+        //                    model.ItemCount = Convert.ToInt32(sdr["ItemCount"]);
+        //                    model.StylingAddrress = sdr["StylingAddress"].ToString();
+        //                    list.Add(model);
+        //                    row = excelSheet.CreateRow(counter);
+        //                    row.CreateCell(currentCell++).SetCellValue(model.ItemNr);
+        //                    row.CreateCell(currentCell++).SetCellValue(model.ItemCount);
+        //                    row.CreateCell(currentCell++).SetCellValue(model.StylingAddrress);
+        //                    counter++;
+        //                    currentCell = 0;
+
+        //                }
+        //                db.con.Close();
+        //            }
+        //            workbook.Write(fs);
+
+        //                error.ErrorMessage.ForeColor = System.Drawing.SystemColors.ScrollBar;
+        //                if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "Export Item File Created";
+        //                else error.ErrorMessage.Text = "Eksporter elementfil oprettet";
+        //                error.ShowDialog();
+        //        }
+        //    }
+
+        //}
         private void OExportList_Click(object sender, EventArgs e)
         {
             var culture = System.Globalization.CultureInfo.CurrentCulture;
             ErrorModal error = new ErrorModal();
             if (OSelectedStylingAddressDropdoen.SelectedItem == null)
             {
-
                 if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "Please select Styling Address";
                 else error.ErrorMessage.Text = "Vælg venligst stylingadresse";
                 error.ShowDialog();
             }
             else
             {
-                
                 var memory = new MemoryStream();
-                string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-                //string filePath = "C:\\Users\\ahmad\\Downloads\\Items\\"; // openFileDialog.FileName;
-                string sFileName = @"exportList.xlsx";
-                if (IsFileLocked(Path.Combine(filePath, sFileName)))
-                {
+                string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                string exportFolderPath = Path.Combine(desktopPath, "export_stylings");
 
+                // Create the folder if it doesn't exist
+                if (!Directory.Exists(exportFolderPath))
+                {
+                    Directory.CreateDirectory(exportFolderPath);
+                }
+
+                string selectedStyling = OSelectedStylingAddressDropdoen.SelectedItem.ToString();
+                string sFileName = $"{selectedStyling}_{DateTime.Now:yyyyMMdd}.xlsx";
+                string fullFilePath = Path.Combine(exportFolderPath, sFileName);
+
+                if (IsFileLocked(fullFilePath))
+                {
                     CloseExcelProcesses();
                 }
-                using (var fs = new FileStream(Path.Combine(filePath, sFileName), FileMode.Create, FileAccess.Write))
+
+                using (var fs = new FileStream(fullFilePath, FileMode.Create, FileAccess.Write))
                 {
                     IWorkbook workbook;
                     workbook = new XSSFWorkbook();
@@ -419,16 +506,16 @@ namespace HomeStyling.InventoryManagement
 
                     var counter = 1;
                     currentCell = 0;
-                    
+
                     string query = "spExportCheckoutItem";
 
-                    DBConn db= new DBConn(); using (db.con)
+                    DBConn db = new DBConn();
+                    using (db.con)
                     using (SqlCommand cmd = new SqlCommand(query, db.con))
                     {
                         // define parameters and their values
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@Index", OSelectedStylingAddressDropdoen.SelectedIndex + 1);
-
 
                         // open connection, execute INSERT, close connection
                         db.con.Open();
@@ -447,19 +534,19 @@ namespace HomeStyling.InventoryManagement
                             row.CreateCell(currentCell++).SetCellValue(model.StylingAddrress);
                             counter++;
                             currentCell = 0;
-
                         }
                         db.con.Close();
                     }
                     workbook.Write(fs);
-                        
-                        error.ErrorMessage.ForeColor = System.Drawing.SystemColors.ScrollBar;
-                        if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "Export Item File Created";
-                        else error.ErrorMessage.Text = "Eksporter elementfil oprettet";
-                        error.ShowDialog();
+
+                    error.ErrorMessage.ForeColor = System.Drawing.SystemColors.ScrollBar;
+                    if (culture.TwoLetterISOLanguageName == "en")
+                        error.ErrorMessage.Text = $"Export Item File Created at {fullFilePath}";
+                    else
+                        error.ErrorMessage.Text = $"Eksporter elementfil oprettet på {fullFilePath}";
+                    error.ShowDialog();
                 }
             }
-
         }
         private void Done_Click(object sender, EventArgs e)
         {

@@ -465,6 +465,7 @@
     <EmbeddedResource Include="InventoryManagement\CheckIn.resx">
       <DependentUpon>CheckIn.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="InventoryManagement\ImageView.resx">
       <DependentUpon>ImageView.cs</DependentUpon>

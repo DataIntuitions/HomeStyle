@@ -157,6 +157,7 @@
             this.Done.ForeColor = System.Drawing.SystemColors.MenuBar;
             this.Done.Name = "Done";
             this.Done.UseVisualStyleBackColor = false;
+            this.Done.Click += new System.EventHandler(this.Done_Click);
             // 
             // CheckIn
             // 

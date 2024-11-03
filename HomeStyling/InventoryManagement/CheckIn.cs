@@ -204,6 +204,7 @@ namespace HomeStyling.InventoryManagement
                 // define parameters and their values
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@ItemCount", Int32.Parse(IItemCount.Text));
+
                 cmd.Parameters.AddWithValue("@ItemNr", IItemNr.Text);
                 cmd.Parameters.AddWithValue("@SelectedItemName", IItemSelctedName.Text);
                 // open connection, execute INSERT, close connection
@@ -222,6 +223,11 @@ namespace HomeStyling.InventoryManagement
 
             }
             
+        }
+
+        private void Done_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

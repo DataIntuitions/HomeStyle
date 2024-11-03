@@ -203,11 +203,21 @@ namespace HomeStyling.Files
             }
             catch (Exception ex)
             {
-                if (ex.Message.Contains("UNIQUE"))
-                {
+
+
+                string filePath = @"C:\\Users\\ahmad\\Desktop\\Assessment\\hello.txt";
+                string data = ex.Message;
+
+               
+                    // Append data to the file
+                    using (StreamWriter writer = new StreamWriter(filePath, true))
+                    {
+                        writer.WriteLine(data);
+                    }
+                    if (ex.Message.Contains("UNIQUE"))
+                    {
                     if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "Item Ne";
                     else error.ErrorMessage.Text = "Kundenummer, navn, e-mail eller telefonnummer findes allerede";
-
                 }
                 else
                 {
