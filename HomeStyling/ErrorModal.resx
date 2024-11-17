@@ -122,10 +122,10 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="ErrorMessage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 73</value>
+    <value>32, 62</value>
   </data>
   <data name="ErrorMessage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>382, 20</value>
+    <value>449, 82</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ErrorMessage.TabIndex" type="System.Int32, mscorlib">
@@ -163,7 +163,7 @@
     <value>NoControl</value>
   </data>
   <data name="OkErrorDialouge.Location" type="System.Drawing.Point, System.Drawing">
-    <value>155, 141</value>
+    <value>193, 112</value>
   </data>
   <data name="OkErrorDialouge.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -196,7 +196,7 @@
     <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>436, 214</value>
+    <value>512, 153</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Message</value>

@@ -74,9 +74,9 @@
             // 
             // StylingName
             // 
+            resources.ApplyResources(this.StylingName, "StylingName");
             this.StylingName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
             this.StylingName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.StylingName, "StylingName");
             this.StylingName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.StylingName.Name = "StylingName";
             // 
@@ -88,25 +88,25 @@
             // 
             // StylingPostalCode
             // 
+            resources.ApplyResources(this.StylingPostalCode, "StylingPostalCode");
             this.StylingPostalCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
             this.StylingPostalCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.StylingPostalCode, "StylingPostalCode");
             this.StylingPostalCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.StylingPostalCode.Name = "StylingPostalCode";
             // 
             // StylingState
             // 
+            resources.ApplyResources(this.StylingState, "StylingState");
             this.StylingState.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
             this.StylingState.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.StylingState, "StylingState");
             this.StylingState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.StylingState.Name = "StylingState";
             // 
             // StylingCity
             // 
+            resources.ApplyResources(this.StylingCity, "StylingCity");
             this.StylingCity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
             this.StylingCity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.StylingCity, "StylingCity");
             this.StylingCity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.StylingCity.Name = "StylingCity";
             // 
@@ -130,25 +130,25 @@
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.StylingLocation);
             this.panel1.Controls.Add(this.pictureBox1);
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // StylingLocation
             // 
+            resources.ApplyResources(this.StylingLocation, "StylingLocation");
             this.StylingLocation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
             this.StylingLocation.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.StylingLocation, "StylingLocation");
             this.StylingLocation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.StylingLocation.Name = "StylingLocation";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::HomeStyling.Properties.Resources.icons8_location_481;
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Image = global::HomeStyling.Properties.Resources.icons8_location_481;
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
@@ -160,9 +160,9 @@
             // 
             // StylingAdditionalName
             // 
+            resources.ApplyResources(this.StylingAdditionalName, "StylingAdditionalName");
             this.StylingAdditionalName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
             this.StylingAdditionalName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.StylingAdditionalName, "StylingAdditionalName");
             this.StylingAdditionalName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.StylingAdditionalName.Name = "StylingAdditionalName";
             // 
@@ -180,9 +180,9 @@
             // 
             // StylingContactPersonName
             // 
+            resources.ApplyResources(this.StylingContactPersonName, "StylingContactPersonName");
             this.StylingContactPersonName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
             this.StylingContactPersonName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.StylingContactPersonName, "StylingContactPersonName");
             this.StylingContactPersonName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.StylingContactPersonName.Name = "StylingContactPersonName";
             // 
@@ -200,8 +200,8 @@
             // 
             // DeleteStyling
             // 
-            this.DeleteStyling.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             resources.ApplyResources(this.DeleteStyling, "DeleteStyling");
+            this.DeleteStyling.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.DeleteStyling.CausesValidation = false;
             this.DeleteStyling.Cursor = System.Windows.Forms.Cursors.Default;
             this.DeleteStyling.FlatAppearance.BorderSize = 0;
@@ -212,8 +212,8 @@
             // 
             // SaveStyling
             // 
-            this.SaveStyling.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             resources.ApplyResources(this.SaveStyling, "SaveStyling");
+            this.SaveStyling.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.SaveStyling.CausesValidation = false;
             this.SaveStyling.Cursor = System.Windows.Forms.Cursors.Default;
             this.SaveStyling.FlatAppearance.BorderSize = 0;
@@ -224,8 +224,8 @@
             // 
             // FindStyling
             // 
-            this.FindStyling.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             resources.ApplyResources(this.FindStyling, "FindStyling");
+            this.FindStyling.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.FindStyling.CausesValidation = false;
             this.FindStyling.Cursor = System.Windows.Forms.Cursors.Default;
             this.FindStyling.FlatAppearance.BorderSize = 0;
@@ -236,8 +236,8 @@
             // 
             // CreateStyling
             // 
-            this.CreateStyling.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             resources.ApplyResources(this.CreateStyling, "CreateStyling");
+            this.CreateStyling.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.CreateStyling.CausesValidation = false;
             this.CreateStyling.Cursor = System.Windows.Forms.Cursors.Default;
             this.CreateStyling.FlatAppearance.BorderSize = 0;
@@ -253,10 +253,10 @@
             // 
             // CustomerDropDown
             // 
+            resources.ApplyResources(this.CustomerDropDown, "CustomerDropDown");
             this.CustomerDropDown.AccessibleRole = System.Windows.Forms.AccessibleRole.Cursor;
             this.CustomerDropDown.AllowDrop = true;
             this.CustomerDropDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(60)))), ((int)(((byte)(88)))));
-            resources.ApplyResources(this.CustomerDropDown, "CustomerDropDown");
             this.CustomerDropDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(167)))), ((int)(((byte)(195)))));
             this.CustomerDropDown.FormattingEnabled = true;
             this.CustomerDropDown.Name = "CustomerDropDown";

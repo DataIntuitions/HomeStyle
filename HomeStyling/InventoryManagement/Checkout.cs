@@ -204,24 +204,25 @@ namespace HomeStyling.InventoryManagement
 
                         SqlDataReader sdr = cmd.ExecuteReader();
 
-                        //if (sdr.Read())
-                        //{
-                        //    if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "No Record Found";
-                        //    else error.ErrorMessage.Text = "Ingen registrering fundet";
-                        //    error.ShowDialog();
-                        //}
-                        //else
-                        //{
-                        //error.ErrorMessage.ForeColor = System.Drawing.SystemColors.ScrollBar;
-                        //if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "Item is now checkout";
-                        //else error.ErrorMessage.Text = "Varen er nu til kassen";
-                        //error.ShowDialog();
+                        if (sdr.Read())
+                        {
+                            if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "No Record Found";
+                            else error.ErrorMessage.Text = "Ingen registrering fundet";
+                            error.ShowDialog();
+                        }
+                        else
+                        {
+                            error.ErrorMessage.ForeColor = System.Drawing.SystemColors.ScrollBar;
+                            if (culture.TwoLetterISOLanguageName == "en") error.ErrorMessage.Text = "Item is now checkout";
+                            else error.ErrorMessage.Text = "Varen er nu til kassen";
+                            error.ShowDialog();
+                            OItemNr.Text = "";
+                            OItemNr.Focus();
+                            ShowPopupForOneSecond();
 
-                        // }
-                        OItemNr.Text = "";
-                        OItemNr.Focus();
-                        ShowPopupForOneSecond();
-                        
+
+                        }
+
                         db.con.Close();
                       
                     }

@@ -181,12 +181,6 @@
   <data name="label13.Text" xml:space="preserve">
     <value>er aktiv</value>
   </data>
-  <data name="DeleteCustomer.Text" xml:space="preserve">
-    <value>Slet</value>
-  </data>
-  <data name="SaveCustomer.Text" xml:space="preserve">
-    <value>Gem</value>
-  </data>
   <data name="CreateStyling.Text" xml:space="preserve">
     <value>opret</value>
   </data>

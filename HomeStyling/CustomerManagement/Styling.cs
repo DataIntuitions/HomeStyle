@@ -132,7 +132,7 @@ namespace HomeStyling.CustomerManagement
                         StylingState.Text = sdr["StylingState"].ToString();
                         StylingPostalCode.Text = sdr["StylingPostalCode"].ToString();
                         StylingContactPersonName.Text = sdr["StylingContactPerson"].ToString();
-                        //CustomerDropDown.SelectedItem= sdr["CustomerNr"].ToString();
+                        CustomerDropDown.SelectedIndex= Convert.ToInt32(CustomerDropDown.FindStringExact(sdr["CustomerName"].ToString())); ;
                         StylingIsActive.Checked = Convert.ToBoolean(sdr["StylingIsActive"]);
                         StylingIdLabel.Text = sdr["Id"].ToString();
                     }
@@ -299,5 +299,7 @@ namespace HomeStyling.CustomerManagement
                 error.ShowDialog();
             }
         }
+
+      
     }
 }
