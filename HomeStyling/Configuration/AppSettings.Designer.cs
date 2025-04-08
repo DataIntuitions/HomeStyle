@@ -5,6 +5,7 @@ namespace HomeStyling.Configuration
 {
     partial class AppSettings
     {
+        
         /// <summary>
         /// Required designer variable.
         /// </summary>
